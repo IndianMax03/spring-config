@@ -1,0 +1,20 @@
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-server:8761/eureka/
+
+tickets-service:
+  ribbon:
+    eureka:
+      enabled: false
+    NIWSServerListClassName: com.brigada.booking_service.config.ConsulServerList
+    ServerListRefreshInterval: 1000
+
+ribbon:
+  client:
+    name: tickets-service
