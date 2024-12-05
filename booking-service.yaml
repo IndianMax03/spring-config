@@ -14,6 +14,7 @@ tickets-service:
       enabled: false
     NIWSServerListClassName: com.brigada.booking_service.config.ConsulServerList
     ServerListRefreshInterval: 1000
+    listOfServers: https://tickets-service:8443
 
 ribbon:
   client:
